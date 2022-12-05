@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfoliio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e4d4747bd7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="nav-cont">
+            <nav>
+                <h1 class="logo reveal"><span class="red">G</span>aata.</h1>
+                <ul id="sidemenu">
+                    <li class="reveal"><a href="#header">Home</a></li>
+                    <li class="reveal"><a href="#about">About</a></li>
+                    <li class="reveal"><a href="#portfolio">Portfoliio</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                
+            </nav>
+        </div>
+        
+        <div class="container">
+            <div class="header-text box2">
+                <p class="typing">Front-End Developer</p>
+                <h1>I am Adeshina <span>Qoreeb</span> <br>Gaata from Nigeria</h1>
+                <a class="btn" href="#">Contact <span>Me</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1 box">
+                    <img src="images/new now.png">
+                </div>
+                <div class="about-col-2 box">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Detailed oriented Frontend Developer working with HTML,CSS & Javascript. Highly adept at both independent and both collaborative projects with an emphasis on landing page and website development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-link" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span>Script</li>
+                            <li>HTML<span>5</span></li>
+                            <li>CSS<span>5</span></li>
+                            <li><span>Git &</span> Github</li>
+                            <li>Web<span>Pack</span></li>
+                            <li><span>Sa</span>as</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2022 - Current (DevCareer)</span><br>Developing, Maintaining & Collaborating on Website and Web Apps </li>
+                            <li><span>Jan 2022 - May 2022 (SideHustle)</span><br>Converted Figma Designs to functional Websites using Html, Css & Javascript</li>
+                            <li><span>Jan 2022 (FreeCodeCamp)</span><br>Responsive Web Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>AltSchool Africa</span><br>Developing Websites Interfaces</li>
+                            <li><span>University of Ilorin</span><br>Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work hidden">
+                    <img src="images/port1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="images/Calculator.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work hidden">
+                    <img src="images/food.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store. </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://github.com/Q-Gaata" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left box">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> qoreebullahigata@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 08143050598</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Adeshina Qoreebullahi Resume.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right box">
+                    <form action="https://formspree.io/f/xpznvary" method="POST">
+                        <input type="text" class="input1" name="Name" placeholder="Your name" required>
+                        <input type="email" class="input2" name="Email" placeholder="Your email" required>
+                        <textarea class="area" name="Message" placeholder="Your Message..." rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Made with <i class="fas fa-heart"></i> by <span>G</span>aata</p>
+        </div>
+    </div>
+
+
+    <div class="modal hide">
+        <button class="cancel">&times</button>
+        <form action="https://formspree.io/f/xpznvary" method="POST">
+            <input type="text" class="input1" name="Name" placeholder="Your name" required>
+            <input type="email" class="input2" name="Email" placeholder="Your email" required>
+            <textarea class="area" name="Message" placeholder="Your Message..." rows="6"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+    </div>
+
+    <div class="overlay hide"></div>
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
