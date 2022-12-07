@@ -1,10 +1,3 @@
-const typing = new Typed('.typing', {
-    strings: ['Front-End Developer', 'Javascript Developer', 'Web Developer'],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-})
-
 const tabLinks = document.querySelectorAll('.tab-link')
 const tabContents = document.querySelectorAll('.tab-contents')
 const sideMenu = document.querySelector('#sidemenu')
@@ -17,7 +10,12 @@ const btnCloseModal = document.querySelector('.cancel')
 const btnsOpenModal = document.querySelector('.header-text .btn')
 const header = document.querySelector('#header .container')
 
-console.log(header)
+const typing = new Typed('.typing', {
+    strings: ['Front-End Developer', 'Javascript Developer', 'Web Developer'],
+    typeSpeed: 80,
+    backSpeed: 60,
+    loop: true
+})
 
 function openTab(tabName){
     tabLinks.forEach(link => {

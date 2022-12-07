@@ -154,12 +154,12 @@ nav {
 
 .reveal {
     position: relative;
-    transform: translateY(-30px);
+    transform: translateY(-50px);
     opacity: 0;
     transition: all 1s ease;
 }
 .reveal:nth-of-type(odd){
-    transform: translateX(-60px);
+    transform: translateX(-90px);
     transition: all 3s ease;
 }
 
@@ -519,6 +519,12 @@ nav .fas {
     transform: translateX(0);
 }
 
+#msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -618,8 +624,3 @@ nav .fas {
 
 }
 
-#msg {
-    color: #61b752;
-    margin-top: 10px;
-    display: block;
-}
