@@ -9,13 +9,9 @@ const overlay = document.querySelector('.overlay')
 const btnCloseModal = document.querySelector('.cancel')
 const btnsOpenModal = document.querySelector('.header-text .btn')
 const header = document.querySelector('#header .container')
+const typing = document.querySelector('.typing')
 
-const typing = new Typed('.typing', {
-    strings: ['Front-End Developer', 'Javascript Developer', 'Web Developer'],
-    typeSpeed: 80,
-    backSpeed: 60,
-    loop: true
-})
+
 
 function openTab(tabName){
     tabLinks.forEach(link => {
@@ -118,4 +114,18 @@ window.addEventListener('scroll', () => {
     }
    })
 })
+
+const animate = () => {
+    setTimeout(() => {
+        typing.textContent = 'Frontend Developer'
+    }, 0)
+    setTimeout(() => {
+        typing.textContent = 'JavaScript Developer'
+    }, 4000)
+    
+}
+
+animate()
+
+setInterval(animate, 8000)
 
